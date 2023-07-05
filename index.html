@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3b2e64c6f5.js" crossorigin="anonymous"></script> 
+    <title>Ngatia Mwai Portfolio</title>
+    <link rel="icon" href="Images/Logo.png" type="images/x-icon">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span> Ngatia Mwai</span> <br> from Kenya</h1>
+            </div>
+        </div>
+    </div>
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/me.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Ngatia Mwai, a passionate UI/UX designer currently pursuing my studies at Multimedia University of Kenya. 
+                        With a strong focus on user-centered design, I strive to create intuitive and visually appealing experiences that leave a lasting impact.
+                        Throughout my journey, I have honed my skills in the art of UI/UX design, and one of my go-to tools is Figma. 
+                        Its versatility and collaborative features have enabled me to bring my creative visions to life while seamlessly collaborating with teams and clients.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <!-- <p class="tab-links onclick=" onclick="opentab('experience')">Experience</p> -->
+                            <!-- <p class="tab-links" onclick="opentab('education')">Education</p> -->
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span> UX Research </span> <br> Researching and Designing Prototypes for Mobile and Web Interfaces </li>
+                                <li><span> Web Design </span> <br> Designing and prototyping web interfaces </li>
+                                <li><span> Mobile App Design </span> <br> Designing and prototyping mobile interfaces </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span> UI/IX</span> <br> Designing Web App Interfaces </li>
+                                <li><span> Web Development</span> <br> Web app Development </li>
+                                <li><span> App Development</span> <br> Building Andriod/iOS apps </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span> UI/IX</span> <br> Designing Web App Interfaces </li>
+                                <li><span> Web Development</span> <br> Web app Development </li>
+                                <li><span> App Development</span> <br> Building Andriod/iOS apps </li>
+                            </ul>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UX Research</h2>
+                    <p>Driven by a deep understanding of human psychology and interaction, I aim to create designs that not only look great but also provide seamless user experiences.
+                        I believe that a well-crafted interface has the power to captivate users, enhance engagement, and ultimately achieve business goals.
+                        My approach to design is grounded in a strong foundation of research and analysis. By understanding the needs and desires of users, 
+                        I can develop solutions that not only meet their expectations but also exceed them.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>When it comes to designing web interfaces, I believe in the power of simplicity. 
+                        By employing clean and intuitive designs, I ensure that users can effortlessly navigate through the interface and find exactly what they need.
+                        I pay meticulous attention to every detail, from color schemes and typography choices to layout and interaction patterns, ensuring a cohesive and harmonious user experience.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Mobile App Design</h2>
+                    <p>When it comes to mobile app interfaces, I believe in the power of simplicity and intuitive interactions.
+                        By employing clean and minimalistic designs, I ensure that users can effortlessly navigate through the app and accomplish their goals with ease. 
+                        I pay meticulous attention to every detail, from pixel-perfect icons and carefully chosen color palettes to smooth transitions and gesture-based interactions, ensuring a delightful and immersive user experience.</p>
+                    <!-- <a href="#" style="color: black;">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Home.png" alt="Tasty Foods">
+                    <div class="layer">
+                        <h3>Tasty Foods Web Interface</h3>
+                        <p>This website helps people to order food from the comfort of their homes. 
+                            It also allows people to reserve tables in the hotel and they can come at their own convinient time.
+                        </p>
+                        <a href="https://dribbble.com/shots/21628027-Tasty-Foods-Web-Interface" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Home Page.png" alt="University of Moore">
+                    <div class="layer">
+                        <h3>University of Moore Web Interface</h3>
+                        <p>University of Moore Web Interface is a web app that has features like regestering of students to the school's website.
+                            The design has a home page for the Unversity, Staff portal, Student portal and contact us page.
+                        </p>
+                        <a href="https://dribbble.com/shots/21627913-University-of-Moore-Web-Interface" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Landing Page.png" alt="Soundwave">
+                    <div class="layer">
+                        <h3>Sondwave Web Interface</h3>
+                        <p>Soundwave Web interface was designed to allow user to register for Soundwave app. The web design has song charts and albums.
+                        </p>
+                        <a href="https://dribbble.com/shots/21627845-Soundwave-Website-Interface" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://dribbble.com/ngatiamwai" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--contact me-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>ngatiamwai25@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i>0793693224</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ngatia.mwai.73" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ngatiamwai/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/NgatiaMwai1" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/ngatia-mwai/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ngatiamwai" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Images/Resume-Ngatia-Mwai.pdf" download target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form/>
+                    <form name="submit-to-google-sheet" />
+                        <input type="text" name="Name" placeholder="Your Name " required>
+                        <input type="email" name="Email" placeholder="Your Email " required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit" >submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p style="color: #fff;">Copyright © Ngatia Mwai.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName ("tab-links");
+        var tabcontents = document.getElementsByClassName ("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwCc9p7O1ECy18xoYWnCwr-qfNZslCFjHh7OduseSHqt7I5xO-h_RGAm6bNeizC-EFx/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                message.innerHTML = ""
+            }, 5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
